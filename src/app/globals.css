@@ -40,3 +40,21 @@ body {
 .footer{
   padding-left: 12%;
 }
+
+.mob_heading{
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .mob_heading{
+    display: block;
+  }
+
+  .dsk_heading{
+    display: none;
+  }
+ 
+}
+
+
+

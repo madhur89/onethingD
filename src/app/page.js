@@ -5,6 +5,7 @@ export default function Home() {
   return (
     <>
 {/* navbar */}
+
       <div class="parent container-fluid mx-auto bg-white">
         <header class="text-gray-600 body-font bg-white">
           <div class="container mx-auto  flex flex-wrap p-6 px-10 flex-col md:flex-row items-center">
@@ -76,6 +77,7 @@ export default function Home() {
     <div class="lg:w-2/6 md:w-1/2  rounded-lg p-8 flex flex-col md:ml-auto w-full mt-5 md:mt-0 section3_1"  >
       
       <div class="relative mb-8 ">
+      <h2 class="title-font font-medium text-3xl text-gray-900  mb-4 mob_heading">Fill Eligibility Form</h2>
        
         <input type="text" id="full-name" name="full-name" placeholder="Enter your phone number" class="w-full border-none shadow-md bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
       </div>
@@ -89,9 +91,9 @@ export default function Home() {
      
     </div>
      
-    <div class="lg:w-3/5 md:w-1/2 md:pl-16 lg:pl-5 ml-11 pl-8">
+    <div class="lg:w-3/5 md:w-1/2 md:pl-16 lg:pl-5 ml-11 pl-8 dsk_heading">
     <span class="flex justify-center"><img className="animate-ping animate-thrice animate-delay-1000 animate-ease-linear animate-normal" src={"/insurance 1.png"} /></span>
-      <h2 class="title-font font-medium text-3xl text-gray-900 flex md:justify-center">Fill Eligibility Form</h2>
+      <h2 class="title-font font-medium text-3xl text-gray-900 flex md:justify-center ">Fill Eligibility Form</h2>
       <p class="leading-relaxed mt-4 flex lg:justify-center">Tell us about yourself, to find out if <br/>  you’re eligible to apply.</p>
     </div>
 
