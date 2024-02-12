@@ -1,7 +1,24 @@
-import Image from "next/image";
+'use client'
 
+import Image from "next/image";
+import React, { useState } from 'react';
 
 export default function Home() {
+
+
+  const [ cardimage, setCardImage ] = useState("https://i.imghippo.com/files/kRCrg1707678818.png")
+
+  const handleCardred = () =>{
+    setCardImage("https://i.imghippo.com/files/weH1A1707720301.png")
+  }
+  const handleCardblack = () =>{
+    setCardImage("https://i.imghippo.com/files/kRCrg1707678818.png")
+  }
+
+
+
+
+
   return (
     <>
 {/* navbar */}
@@ -130,11 +147,11 @@ export default function Home() {
         </div>                
     </div>
 </section>
-
+{/* swatcher style */}
 <section class="bg-violet-50">
     <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-    <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-            <img src="https://i.imghippo.com/files/kRCrg1707678818.png" alt="mockup"/>    
+    <div class=" mb-5 lg:mt-0 lg:col-span-5 lg:flex">
+            <img src={cardimage} alt="mockup"/>    
       </div>
       
         
@@ -142,11 +159,36 @@ export default function Home() {
         <div class="ml-auto place-self-center lg:col-span-7">
         <img className="mb-1" src="https://i.imghippo.com/files/JFIRV1707678590.png"/>
             <h1 class="max-w-2xl mb-4 text-4xl font-medium tracking-tight leading-none md:text-5xl xl:text-6xl text-black">Select Your Style</h1>
-            <p class="max-w-2xl mb-6 font-light text-black lg:mb-8 md:text-lg lg:text-xl">Match your card to your personality. Whether you like a minimal look or something that catches everyone’s eyes, we’ve got a style for you. You can update your style every year, for a small fee </p>
-            
+            <p class="max-w-2xl mb-6 font-light text-black lg:mb-8 md:text-lg lg:text-xl">Match your card to your personality. Whether you like a minimal look or something that catches everyone’s eyes, we’ve got a style for you. 
+            You can update your style every year, for a small fee </p>
         </div>
-              
+
+
+        
+  <div class="flex flex-wrap mx-4">
+    
+    <div className="flex">
+       
+        <img onClick={handleCardblack} src="https://i.imghippo.com/files/hjZCN1707719637.png" alt="Image 1"width={60} class="w-100 h-auto"/>
+        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 px-4 mb-4"/>
+        <img onClick={handleCardred} src="https://i.imghippo.com/files/vM4Av1707719668.png" alt="Image 1"width={60} class="w-100 h-auto"/>
+    </div> 
+   
+
     </div>
+
+    </div>
+    
+
+
+    
+
+
+
+    
+    
+              
+    
     
 </section>
 
